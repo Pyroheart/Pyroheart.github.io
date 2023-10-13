@@ -1,3 +1,3 @@
 # Pyroheart.github.io
 
-PErsonal GitHub Website
+Personal GitHub Website
