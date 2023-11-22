@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
   --background-color: #E6BA9E;
   --light-accent: #78B968;
@@ -8,13 +10,15 @@
 
 h1 {
   text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 200px;
 }
 
 
@@ -22,7 +26,20 @@ body {
 /* INDEX.HTML */
 
 header {
+  /* background-color: var(--main-brand-color); */
+  background: rgba(0,0,0,0);
+  color: white;
+  padding: 10px;
+  margin: 0;
+  z-index: 10;
+  /* position: fixed;
+  top: 0; */
+}
+
+.headerMain {
   background-color: var(--main-brand-color);
+  z-index: 10;
+  /* background: rgba(0,0,0,0); */
   color: white;
   padding: 10px;
   margin: 0;
@@ -35,16 +52,19 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 10;
 }
 
 nav ul li {
   margin: 0 10px;
+  z-index: 10;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   transition: color 0.3s;
+  z-index: 10;
 }
 
 nav ul li a:hover {
@@ -169,5 +189,125 @@ footer {
 @media (max-width: 480px) {
   .card {
     flex: 0 1 calc(50% - 1em);
+  }
+}
+
+
+
+
+/* Themes PAGES */
+
+.container {
+  padding: 3rem;
+}
+.container p {
+  padding-left: 1rem;
+}
+.themeNav {
+  border-top: 1px solid #fff; /* Adds a 1px white border on top */
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+#about {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding-top: 2rem;
+  /* background-image: url('../assets/img/templates/bauhaus/Cover of Bauhausbuch 6.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; */
+}
+
+
+/* Cover */
+.coverBauhaus {
+  position: relative;
+  background-image: url('../assets/img/templates/bauhaus/Cover of Bauhausbuch 6.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.coverBauhaus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(56, 56, 56, 0.5); /* Adjust the alpha value to make it darker or lighter */
+  z-index:2;
+}
+
+.fadeCover {
+  height: 4rem;
+  background: linear-gradient(to bottom, rgba(56, 56, 56, 0.1), rgba(56, 56, 56, 0.5));
+}
+
+#visualType > h2, p {
+  text-align: center;
+}
+
+#visualType {
+  width: 80%;
+  border: 1px solid #AD5060;
+  margin: 0 auto;
+}
+
+.imageRight {
+  width: 110px;
+  float: right;
+}
+
+.typoImg {
+    width: 100%;
+  }
+
+.imageLeft {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.imageLeft > img {
+  float: left;
+  margin-right: 20px; 
+  width: 110px; 
+}
+.imageLeft > p {
+  margin: auto 0;
+}
+
+.centerImage {
+  display: flex;
+  justify-content: center;
+}
+
+.visualImg {
+  max-width: 50%; /* Adjust the max-width as needed to make the image smaller */
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 1;
+  /* padding: 10px; */
+  border: 1px solid #AD5060;
+  padding: 10px;
+  margin: 10px; 
+}
+
+.column > section {
+  background-color: #AD5060;
+  padding: 1rem;
+}
+
+@media (max-width: 620px) {
+  .row {
+    flex-direction: column;
   }
 }
