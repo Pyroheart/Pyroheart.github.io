@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+/* ROOT ELEMENTS */
 :root {
   --background-color: #E6BA9E;
   --light-accent: #78B968;
@@ -20,6 +22,8 @@ body {
   padding: 0;
   min-width: 200px;
 }
+
+
 
 
 
@@ -98,13 +102,16 @@ footer {
 
 
 /* Media queries index.html */
-
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 }
+
+
+
+
 
 /* Home.html */
 .homeWelcomeContent {
@@ -127,8 +134,11 @@ footer {
   margin: 2.5px;
 }
 
-/* Themes.html */
 
+
+
+
+/* Themes.html */
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +205,7 @@ footer {
 
 
 
-/* Themes PAGES */
+/* EVERY Themes PAGES */
 
 .container {
   padding: 3rem;
@@ -224,6 +234,46 @@ section {
 
 
 /* Cover */
+.coverMilitantGraphics{
+  position: relative;
+  background-image: url('../assets/img/templates/Graphisme militant/Barbara KRUGER, Untitled (I shop therefore I am), 1989.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.coverConstructivism{
+  position: relative;
+  background-image: url('../assets/img/templates/Constructivisme/36944504595_497fdcb7f2_o.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.coverNineties{
+  position: relative;
+  background-image: url('../assets/img/templates/Design années 90/49745676218_d11b9db2c6_o.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.coverGrapus{
+  position: relative;
+  background-image: url('../assets/img/templates/Grapus/46692572275_462752d7a2_o.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.coverArtNouveau{
+  position: relative;
+  background-image: url('../assets/img/templates/Art nouveau/34935580216_5902a4c8b4_o.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 .coverBauhaus {
   position: relative;
   background-image: url('../assets/img/templates/bauhaus/Cover of Bauhausbuch 6.jpg');
@@ -232,7 +282,7 @@ section {
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.coverBauhaus::before {
+.cover::before {
   content: '';
   position: absolute;
   top: 0;
@@ -243,11 +293,17 @@ section {
   z-index:2;
 }
 
+
 .fadeCover {
   height: 4rem;
-  background: linear-gradient(to bottom, rgba(56, 56, 56, 0.1), rgba(56, 56, 56, 0.5));
+  background: linear-gradient(to bottom, rgba(56, 56, 56, 0), rgba(56, 56, 56, 0.8));
 }
 
+
+
+
+
+/* Visual type part */
 #visualType > h2, p {
   text-align: center;
 }
@@ -258,6 +314,10 @@ section {
   margin: 0 auto;
 }
 
+
+
+
+/* IMAGES */
 .imageRight {
   width: 110px;
   float: right;
@@ -290,6 +350,12 @@ section {
   max-width: 50%; /* Adjust the max-width as needed to make the image smaller */
 }
 
+
+
+
+
+
+/* Column of section */
 .row {
   display: flex;
 }
