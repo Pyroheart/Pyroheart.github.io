@@ -250,6 +250,10 @@ section {
   color: white; */
 }
 
+#about > p {
+  font-weight: bold;
+}
+
 
 
 
@@ -273,7 +277,7 @@ section {
 }
 .coverNineties{
   position: relative;
-  background-image: url('../assets/img/templates/Design années 90/49745676218_d11b9db2c6_o.jpg');
+  background-image: url('../assets/img/templates/Design années 90/cover.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -431,6 +435,47 @@ section {
 }
 
 
+/* youtube */
+.youtube > h2 {
+  text-align: center;
+  color: black;
+}
+
+.youtube > p {
+  text-align: center;
+  color: black;
+}
+
+.youtube {
+  width: 80%;
+  /* border: 1px solid var(--main-brand-color); */
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iframeBG{
+  padding:1rem;
+  overflow: hidden;
+}
+
+.youtubeSizeRatio {
+  position: relative; 
+  width: 100%; 
+  height: 0; 
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+   height: 100%; 
+   border: none;
+}
+
 
 
 /* IMAGES */
@@ -451,7 +496,7 @@ section {
 .imageLeft > img {
   float: left;
   margin-right: 10px; 
-  width: 110px; 
+  width: 130px; 
 }
 .imageLeft > p {
   margin: auto 0;
@@ -509,13 +554,19 @@ section {
  .artNouveauBorder > section {
    background-color: var(--artNouveau-theme);
  }
- 
+ .artNouveauBorder > .iframeBG {
+  background-color: var(--artNouveau-theme);
+}
+
  .bauhausBorder{
    border:1px solid var(--bauhaus-theme);
  }
  .bauhausBorder > section {
    background-color: var(--bauhaus-theme);
  }
+ .bauhausBorder > .iframeBG {
+  background-color: var(--bauhaus-theme);
+}
  
  .constructivismBorder{
    border:1px solid var(--constructivism-theme);
@@ -523,6 +574,9 @@ section {
  .constructivismBorder > section {
    background-color: var(--constructivism-theme);
  }
+ .constructivismBorder > .iframeBG {
+  background-color: var(--constructivism-theme);
+}
  
  .grapusBorder{
    border:1px solid var(--grapus-theme);
@@ -530,6 +584,9 @@ section {
  .grapusBorder > section {
    background-color: var(--grapus-theme);
  }
+ .grapusBorder > .iframeBG {
+  background-color: var(--grapus-theme);
+}
 
  .grapusBorder p {
   color: white;
@@ -545,6 +602,9 @@ section {
  .militantGraphicsBorder > section {
    background-color: var(--militantGraphics-theme);
  }
+ .militantGraphicsBorder > .iframeBG {
+  background-color: var(--militantGraphics-theme);
+}
  .militantGraphicsBorder p {
   color: white;
  }
@@ -559,3 +619,6 @@ section {
  .ninetiesBorder > section {
    background-color: var(--nineties-theme);
  }
+ .ninetiesBorder > .iframeBG {
+  background-color: var(--nineties-theme);
+}
